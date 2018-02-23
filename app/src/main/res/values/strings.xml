@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">猜成语</string>
+    <string name="start_game">开始游戏</string>
+    <string name="load_error">网络异常，稍后重试</string>
+    <string name="reload">重新加载</string>
+    <string name="chengyu_result">--- 共%s组成语 ---\n</string>
+    <string name="clear">清除</string>
+    <string name="remind">提示</string>
+    <string name="unknow_remind">未找到相关提示(┬＿┬)</string>
+</resources>

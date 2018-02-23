@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ljb.chengyu.widget.DisplayChildGridView
+        android:id="@+id/gv_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="8"
+        android:verticalSpacing="5dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/gv_box"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_answer1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/shape_answer_bg"
+            android:gravity="center"
+            android:textColor="#FFA042"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_answer2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_answer_bg"
+            android:gravity="center"
+            android:textColor="#FFA042"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_answer3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_answer_bg"
+            android:gravity="center"
+            android:textColor="#FFA042"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_answer4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_answer_bg"
+            android:gravity="center"
+            android:textColor="#FFA042"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_clear_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ll_answer"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/ll_answer"
+        android:text="@string/clear"
+        android:textColor="#59D2EB"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_remind"
+        android:drawablePadding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ll_answer"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/ll_answer"
+        android:drawableLeft="@drawable/icon_remind"
+        android:text="@string/remind"
+        android:textColor="@color/colorFFA042"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:maxWidth="250dp"
+        android:id="@+id/tv_remind_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_answer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#666"
+        android:textSize="14sp" />
+
+</RelativeLayout>
